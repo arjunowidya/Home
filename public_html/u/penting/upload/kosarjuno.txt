@@ -1,0 +1,72 @@
+import java.util.*;
+
+public class Programkos {
+
+	public static void main(String[] args) {
+		menu(); // fungsine untuk memanggil method menu
+	}
+
+	private static Scanner in = new Scanner(System.in);
+	private static int kos = 1, rumahmakan = 2, cafe = 3, tamantempatbermain = 4, masuk;
+
+// method menu
+	public static void menu() {
+		int menu = 0;
+		System.out.println("Kita Ada Di Daerah Gresik");
+		System.out.println("Sebelumnya Perkenalkan Dulu Nama Kamu:");
+		String nama = in.next();
+		System.out.println("Halo, " + nama + " ingin kemana hari ini?");
+		System.out.println("Kami Menyediakan referensi untuk anda");
+		System.out.println("1. Kos");
+		System.out.println("2. Rumah Makan");
+		System.out.println("3. Cafe");
+		System.out.println("4. Taman Tempat Bermain");
+		System.out.print("Pilih yang anda ingin datangi: ");
+		masuk = in.nextInt();
+		if (masuk == 1) {
+			kos();  // fungsine untuk memanggil method kos
+		}
+		else if (masuk == 2) {
+			rumahmakan();  // fungsine untuk memanggil method rumah makan
+		}
+		else if (masuk == 3) {
+			cafe();  // fungsine untuk memanggil method cafe
+		}
+		else if (masuk == 4) {
+			cafe();  // fungsine untuk memanggil method taman teman bermain
+		}
+	}
+
+// method kos	
+	public static void kos() {
+		System.out.println();
+		int gang5 = 1, gang7 = 2, gang9 = 3;
+		System.out.println("1.Kos Gang 5");
+		System.out.println("2.Kos Gang 7");
+		System.out.println("3.Kos Gang 9");
+		System.out.print("Masukkan nomor urut kos : ");
+		masuk = in.nextInt();
+		System.out.println();
+		if (masuk == gang5) {
+			System.out.println("Harga = 500 ribu");
+			System.out.print("fasilitas : ");
+			System.out.println("kamar mandi dalam, air bersih");
+		
+		} else if (masuk == gang7) {
+			System.out.println("Harga = 700 ribu");
+			System.out.print("fasilitas : ");
+			System.out.println("kamar mandi dalam, air bersih, wifi");
+			
+		} else if (masuk == gang9) {
+			System.out.println("Harga = 900 ribu");
+			System.out.print("fasilitas : ");
+			System.out.println("kamar mandi dalam, air bersih, wifi, AC");
+		}
+		else {
+			kos(); // fungsine untuk memanggil method kos
+		}
+	}
+
+	// selesai
+
+}

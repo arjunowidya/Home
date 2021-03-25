@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . http://arjunowidya.best/? [R=301,L]
+Redirect 301 /99 http://arjunowidya.blogspot.com/2009/12/kegiatan-pesantren-09.html
+

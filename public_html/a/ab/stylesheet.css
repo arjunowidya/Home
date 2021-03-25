@@ -1,0 +1,304 @@
+.lesson-wrapper {
+  height: 441px;
+  padding-bottom: 40px;
+  background-color: #000000;
+  text-align: center;
+}
+
+
+
+.lesson {
+  position: relative;
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon img{
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.overlay{
+  position: absolute;
+  vertical-align: middle;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 200px;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 50%;
+  background-color: black;
+  object-fit: cover;
+  margin-left : 16%;
+}
+
+.lesson-icon:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: #5f5d60;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: white;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 30px;
+  color: #b3aeb5;
+  font-family: "Roboto";
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbUY5ljlsfpzb2ijCdVajabcQDzpSS7rH9qQ&usqp=CAU);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+}
+
+.logo {
+  float: left;
+  width: 40px;
+  margin-top: 10px;
+}
+
+.header-left {
+  position: sticky;
+  float: left;
+}
+
+.header-right {
+  position: sticky;
+  float: right;
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+  transition: all 0.5s;
+  
+}
+
+.header-right:hover {
+  background-color: #00a2c6;
+  padding: 5px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+}
+
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.heading h2{
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+
+.lesson-icon {
+  position: relative;
+}
+
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  background-image: url(https://i.pinimg.com/originals/8a/b8/66/8ab86636d6740e5a418e9d8cb000f786.jpg);
+  background-size: cover;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+footer img{
+   width: 60px;
+}
+
+footer p{
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+background-image: url(https://i.pinimg.com/originals/8a/b8/66/8ab86636d6740e5a418e9d8cb000f786.jpg);
+padding-top: 20px;
+background-size: cover;
+}
+
+footer h1 {
+  position: absolute;
+        width: 356px;
+        height: 49px;
+        left: 167px;
+        top: 1590px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 29px;
+
+        color: #A79B9B;
+}
+footer h2 {
+  position: absolute;
+        width: 356px;
+        height: 49px;
+        left: 164px;
+        top: 1618px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 29px;
+
+        color: #A79B9B;
+}
+
+.header-left h1 {
+position: absolute;
+        width: 356px;
+        height: 49px;
+        left: 52px;
+        top: -7px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 29px;
+
+        color: #A79B9B;
+}

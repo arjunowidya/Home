@@ -1,0 +1,38 @@
+============================Xampp => laravel==================================
++++++++++++++Muncul Kesalahan Error+++++++++++++++++++++++
+Facade\Ignition\Exceptions\ViewException
+syntax error, unexpected ':', expecting ']' (View: C:\xampp\htdocs\codespace\resources\views\pages\space\create.blade.php)
+https://arjuno.dev/codespace/public/space/create   
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+<div id="here-maps">
+                   <label for="">Pin Location</label>
+                   <div style="height: 500px" id="mapContainer"></div>
+               </div>
+               <div class="form-group">
+                   <label for="">Latitude</label>
+                   {!! Form::text('latitude', null, ['class' => $errors->has('latitude') ? 
+                    'form-control is-invalid' : 'form-control', 'id' => 'lat']) !!}
+                    @error('latitude')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+               </div>
+               <div class="form-group">
+                   <label for="">Longitude</label>
+                   {!! Form::text('longitude', null, ['class' => $errors->has('longitude') ? 
+                    'form-control is-invalid' : 'form-control', 'id' => 'lng']) !!} <----------- pada barisan ini syntax error penjelasan syntax trace chrome
+                    @error('longitude')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+               </div>
+               <button type="submit" class="btn btn-primary">Submit</button>
+               {!! Form::close() !!} 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
